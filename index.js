@@ -3,8 +3,12 @@ const app = express();
 const port = 8000;
 
 
+app.set("view engine", "views");
+
+
+
 app.get("/", (req, res) => {
-    res.json({message:"Hello from my website"});
+    res.render("index.ejs");
 });
 
 app.listen(port, () => {
