@@ -9,7 +9,7 @@ app.set("views", path.join(__dirname, "views"));
 
 
 app.get("/", (req, res) => {
-    res.json({aa:"aaaaaa"});
+    res.render("index.ejs");
 });
 
 app.listen(PORT, () => {
